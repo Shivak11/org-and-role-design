@@ -1,0 +1,18 @@
+# Diagram style contract
+
+This contract applies to the task-change and general manager comparison renderers. Literal language and explicit actor semantics take precedence over external style guidance. User and project instructions take precedence over this contract. All required palette, fonts and symbol assets are included in this skill.
+
+The palette and type pairing adapt the Editorial Magazine Interface style published on StyleRef.io (https://styleref.io/share/cn3z318f-03d09f649c58). No StyleRef account or service is needed to use this skill.
+
+Use warm paper #F6F2EA, reading surface #FFFDF9, ink #191714, muted text #655F55 and rules #D9D2C4. Pair Georgia serif headings with Avenir Next / Avenir sans-serif diagram and body text. Keep diagrams flat, spacious and precisely aligned, with fine rules and no shadows or gradients. Use a deliberate light theme and local font fallbacks so the document remains offline.
+
+Semantic exceptions to that style: retain orange #A84D24 for human actions and teal #08776E for agent actions, pale versions of each for enclosures, and the existing Sketchyicons pictograms. Orange circles identify people; teal clipped-corner shapes identify agent work; joined person and bot symbols identify hybrid execution; diamonds test conditions. Grey dashed shapes indicate an unresolved executor. These are task roles or work collections, never inferred agent counts or coordinated swarms. Use sharp page sections rather than repeated rounded cards. Sentence-case headings, direct prose, no italics, no decorative kickers, stock photos or simulated grain. These exceptions preserve the literal language and diagram semantics.
+
+Open with the compact, connected human-AI organisation hierarchy. In the task view, show the changed task and its current and proposed contributions side by side. Colour, connector thickness, text labels and changed geometry must jointly show the authority change. Keep stable steps aligned. A secondary ownership diagram separates policy, maintenance, execution and exception routing. Pair current and proposed reporting in its own view even when the relationships stay the same. One dominant diagram is visible at a time through accessible view controls; without JavaScript every view remains available.
+
+Do not mark newly recorded responsibilities as historical changes when the current decision arrangement is unknown. The visual claim and evidence state must agree. Keep the selected boundary and outstanding checks next to the agent action. Make each comparison fit a 1200 to 1400 pixel reading width when practical with readable labels and avoid large text-heavy containers. Use the same drawing for inline SVG and downloadable PNG/SVG exports.
+
+
+General manager comparisons pair the same activity across current and proposed columns. Include actor mode, actual human and agent contributions, accountable human, handoff or condition, and why the allocation is chosen. A known change receives visible emphasis; retained work, newly specified responsibilities and unassessed work receive distinct textual states. An agent is not compulsory. A participant who has not started with AI sees a human/software baseline and a clearly proposed arrangement. At enterprise scale use participant-confirmed units and expandable details, without invented counts or silent loss of reporting levels. Keep formal reporting separate from functional coordination, agent supervision and service maintenance.
+
+Use short action summaries inside work shapes. Keep full explanations in selectable native details. A diagram with paragraphs inside large boxes does not satisfy this visual contract.

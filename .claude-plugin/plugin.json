@@ -1,0 +1,13 @@
+{
+  "name": "org-and-role-design",
+  "version": "1.0.0",
+  "description": "Three skills for designing organisations and roles for work shared between people and AI: a manager's human and AI organisation-design exercise, a learner-led organisation-structure exercise built on everyday workflows, and a job-description-to-skill-map and course builder.",
+  "author": {
+    "name": "Shiva Kakkar",
+    "url": "https://www.shivakakkar.com/"
+  },
+  "homepage": "https://github.com/Shivak11/org-and-role-design",
+  "repository": "https://github.com/Shivak11/org-and-role-design",
+  "license": "MIT",
+  "keywords": ["organisation-design", "org-design", "human-ai-teams", "ai-agents", "span-of-control", "job-description", "skill-map", "course-design", "teaching", "management"]
+}

@@ -1,0 +1,1236 @@
+{
+  "schema_version": 1,
+  "title": "L&D: current and proposed organisation",
+  "status": "draft",
+  "revision": 1,
+  "confirmation": {
+    "accepted": false,
+    "revision": 1,
+    "wording": ""
+  },
+  "organisation": {
+    "label": "Meridian Components (fictional)",
+    "scope": "A seven-person L&D team supporting 4,800 people across five plants.",
+    "horizon": "Target design after a bounded four-week trial; no implementation is approved.",
+    "context": "Every company detail, role, quantity and answer in this worked example is fictional. CHRO is shown outside the seven-person L&D headcount. Current AI use is absent.",
+    "exclusions": "Other HR functions, employee appraisal, safety certification and enterprise-wide staffing design."
+  },
+  "evidence_note": "Authored fictional L&D exercise; no real participant or company claim.",
+  "outcomes": [
+    {
+      "id": "readiness",
+      "name": "Improve first-time supervisor readiness",
+      "owner_id": "head",
+      "success": "Proposed: increase observed use of feedback and shift-handover practices; measure against the initial cohort baseline.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "id": "coordination",
+      "name": "Reduce scheduling and follow-up delays",
+      "owner_id": "head",
+      "success": "Proposed: compare coordination hours, booking errors and unresolved exceptions with the current process.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    }
+  ],
+  "current_roles": [
+    {
+      "id": "chro",
+      "label": "CHRO",
+      "parent_id": null,
+      "scope": "Company HR leadership",
+      "responsibilities": [
+        "Approves organisation changes and HR technology access."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "outside_scope"
+    },
+    {
+      "id": "head",
+      "label": "Head of L&D",
+      "parent_id": "chro",
+      "scope": "Learning outcomes",
+      "responsibilities": [
+        "Sets capability priorities and owns the programme budget."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ops",
+      "label": "L&D Operations Manager",
+      "parent_id": "head",
+      "scope": "Programme operations",
+      "responsibilities": [
+        "Schedules programmes and manages coordination."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "design",
+      "label": "Learning Design Lead",
+      "parent_id": "head",
+      "scope": "Learning design",
+      "responsibilities": [
+        "Creates content and approves learning quality."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "lms",
+      "label": "Digital Learning Specialist",
+      "parent_id": "ops",
+      "scope": "LMS and learning data",
+      "responsibilities": [
+        "Maintains the LMS and reports completion."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "north",
+      "label": "L&D Partner: North",
+      "parent_id": "ops",
+      "scope": "Three plants",
+      "responsibilities": [
+        "Validates needs and coaches line managers."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "south",
+      "label": "L&D Partner: South",
+      "parent_id": "ops",
+      "scope": "Two plants",
+      "responsibilities": [
+        "Validates needs and coaches line managers."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coord",
+      "label": "Programme Coordinator",
+      "parent_id": "ops",
+      "scope": "Programme administration",
+      "responsibilities": [
+        "Collects nominations and chases follow-ups."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "proposed_roles": [
+    {
+      "id": "chro",
+      "label": "CHRO",
+      "parent_id": null,
+      "scope": "Company HR leadership",
+      "responsibilities": [
+        "Approves organisation changes and HR technology access."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "outside_scope"
+    },
+    {
+      "id": "head",
+      "label": "Head of L&D",
+      "parent_id": "chro",
+      "scope": "Learning outcomes",
+      "responsibilities": [
+        "Sets capability priorities and owns the programme budget."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ops",
+      "label": "L&D Operations Manager",
+      "parent_id": "head",
+      "scope": "Programme operations",
+      "responsibilities": [
+        "Supervises bounded scheduling work and resolves scheduling exceptions."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "design",
+      "label": "Learning Design Lead",
+      "parent_id": "head",
+      "scope": "Learning design",
+      "responsibilities": [
+        "Uses an AI assistant for drafts; validates every learning activity and example."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "lms",
+      "label": "Digital Learning Specialist",
+      "parent_id": "head",
+      "scope": "LMS and learning data",
+      "responsibilities": [
+        "Maintains LMS, agent access, evaluation and operating records."
+      ],
+      "change": "changed",
+      "reason": "Proposed direct reporting to Head of L&D because AI service quality and learning data now span operations and design; requires CHRO agreement.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent",
+      "chart_caption": "Now reports to Head of L&D"
+    },
+    {
+      "id": "north",
+      "label": "L&D Partner: North",
+      "parent_id": "ops",
+      "scope": "Three plants",
+      "responsibilities": [
+        "Supervises practice follow-up agents for both regions and coaches line managers."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "south",
+      "label": "L&D Partner: South",
+      "parent_id": "ops",
+      "scope": "Two plants",
+      "responsibilities": [
+        "Validates needs and coaches line managers."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coord",
+      "label": "Programme Coordinator",
+      "parent_id": "ops",
+      "scope": "Programme administration",
+      "responsibilities": [
+        "Checks incomplete nominations and coordinates cases outside agreed rules."
+      ],
+      "change": "retained",
+      "reason": "Reporting retained in this fictional proposal.",
+      "node_type": "role",
+      "size": "One human role",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "services": [
+    {
+      "id": "cohort",
+      "label": "Cohort operations agents",
+      "outcome_owner_id": "head",
+      "supervisor_id": "ops",
+      "service_owner_id": "lms",
+      "availability": "Proposed target only; access and reliability are unverified.",
+      "shared_with": "Five plants within the selected supervisor programme.",
+      "agent_roles": [
+        {
+          "id": "cohort-agent",
+          "label": "Cohort operations agents",
+          "tasks": [
+            "Check nominated names against approved rules.",
+            "Book eligible sessions and return exceptions."
+          ],
+          "autonomy": "No employee selection, unapproved slots or access beyond the authorised cohort.",
+          "inputs": "Approved cohort roster, rules and calendar slots.",
+          "outputs": "Invitation log and exception queue.",
+          "tools": [
+            "LMS and calendar access to verify; no current integration claimed."
+          ],
+          "escalation_to_id": "ops",
+          "escalation_condition": "Unclear identity, missing consent, a failed check or a request outside the agreed assignment.",
+          "instances": null
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice follow-up agents",
+      "outcome_owner_id": "head",
+      "supervisor_id": "north",
+      "service_owner_id": "lms",
+      "availability": "Proposed target only; access and reliability are unverified.",
+      "shared_with": "Five plants within the selected supervisor programme.",
+      "agent_roles": [
+        {
+          "id": "practice-agent",
+          "label": "Practice follow-up agents",
+          "tasks": [
+            "Send approved practice prompts.",
+            "Collect submitted evidence and assemble it for partner review."
+          ],
+          "autonomy": "No readiness ratings, employee rankings or appraisal updates.",
+          "inputs": "Approved prompts and participant submissions.",
+          "outputs": "Evidence queue with missing or disputed items marked.",
+          "tools": [
+            "LMS and calendar access to verify; no current integration claimed."
+          ],
+          "escalation_to_id": "north",
+          "escalation_condition": "Unclear identity, missing consent, a failed check or a request outside the agreed assignment.",
+          "instances": null
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "supervisor",
+      "label": "Develop a cohort of first-time supervisors",
+      "outcome_id": "readiness",
+      "coverage": "One representative workflow; all five plants shown at role level.",
+      "current": [
+        {
+          "id": "need",
+          "action": "Agree the gap",
+          "actor_type": "human",
+          "actor_id": "head",
+          "actor_label": "",
+          "owner_id": "head",
+          "input": "Plant concerns",
+          "output": "Agreed capability need",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "design",
+          "action": "Create practice",
+          "actor_type": "human",
+          "actor_id": "design",
+          "actor_label": "",
+          "owner_id": "design",
+          "input": "Agreed need",
+          "output": "Approved material",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "nominate",
+          "action": "Check nominations",
+          "actor_type": "human",
+          "actor_id": "coord",
+          "actor_label": "",
+          "owner_id": "ops",
+          "input": "Plant nominations",
+          "output": "Agreed cohort",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "book",
+          "action": "Schedule sessions",
+          "actor_type": "human",
+          "actor_id": "coord",
+          "actor_label": "",
+          "owner_id": "ops",
+          "input": "Agreed cohort",
+          "output": "Invitations",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "teach",
+          "action": "Facilitate practice",
+          "actor_type": "human",
+          "actor_id": "design",
+          "actor_label": "",
+          "owner_id": "design",
+          "input": "Approved material",
+          "output": "Observed practice",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "follow",
+          "action": "Review workplace practice",
+          "actor_type": "human",
+          "actor_id": "north",
+          "actor_label": "",
+          "owner_id": "north",
+          "input": "Manager responses",
+          "output": "Coaching actions",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "record",
+          "action": "Record completion",
+          "actor_type": "human",
+          "actor_id": "lms",
+          "actor_label": "",
+          "owner_id": "lms",
+          "input": "Attendance",
+          "output": "LMS record",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "proposed": [
+        {
+          "id": "need",
+          "action": "Agree the gap",
+          "actor_type": "human",
+          "actor_id": "head",
+          "actor_label": "",
+          "owner_id": "head",
+          "input": "Plant concerns",
+          "output": "Agreed capability need",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "design",
+          "action": "Prepare AI-assisted practice",
+          "actor_type": "human",
+          "actor_id": "design",
+          "actor_label": "",
+          "owner_id": "design",
+          "input": "Job context plus assistant drafts",
+          "output": "Human-approved material",
+          "approval_by_id": "design",
+          "condition": ""
+        },
+        {
+          "id": "nominate-check",
+          "action": "Check nominations",
+          "actor_type": "agent",
+          "actor_id": "cohort-agent",
+          "actor_label": "",
+          "owner_id": "ops",
+          "input": "Approved roster and nominations",
+          "output": "Checks and exceptions",
+          "approval_by_id": null,
+          "condition": "No autonomous employee selection."
+        },
+        {
+          "id": "nominate-resolve",
+          "action": "Resolve nomination exceptions",
+          "actor_type": "human",
+          "actor_id": "coord",
+          "actor_label": "",
+          "owner_id": "ops",
+          "input": "Flagged missing details",
+          "output": "Confirmed cohort",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "book",
+          "action": "Book eligible sessions",
+          "actor_type": "agent",
+          "actor_id": "cohort-agent",
+          "actor_label": "",
+          "owner_id": "ops",
+          "input": "Approved cohort and slots",
+          "output": "Invitations or exception",
+          "approval_by_id": null,
+          "condition": "Failed checks return to Operations Manager.",
+          "escalation": {
+            "to_id": "ops",
+            "trigger": "A booking fails a cohort, slot or capacity check.",
+            "return_to_step_id": null
+          }
+        },
+        {
+          "id": "teach",
+          "action": "Facilitate practice",
+          "actor_type": "human",
+          "actor_id": "design",
+          "actor_label": "",
+          "owner_id": "design",
+          "input": "Approved material",
+          "output": "Observed practice",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "follow-collect",
+          "action": "Collect practice evidence",
+          "actor_type": "agent",
+          "actor_id": "practice-agent",
+          "actor_label": "",
+          "owner_id": "north",
+          "input": "Approved prompts and submissions",
+          "output": "Evidence queue",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "follow-judge",
+          "action": "Judge practice and coach",
+          "actor_type": "human",
+          "actor_id": "north",
+          "actor_label": "",
+          "owner_id": "north",
+          "input": "Evidence queue",
+          "output": "Coaching action",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "record",
+          "action": "Record validated attendance",
+          "actor_type": "software",
+          "actor_id": null,
+          "actor_label": "LMS",
+          "owner_id": "lms",
+          "input": "Validated attendance",
+          "output": "Completion record",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "relations": {
+        "current": [
+          {
+            "from_step_id": "need",
+            "to_step_id": "design",
+            "kind": "information",
+            "label": "Agreed capability need"
+          },
+          {
+            "from_step_id": "need",
+            "to_step_id": "nominate",
+            "kind": "information",
+            "label": "Agreed capability need"
+          },
+          {
+            "from_step_id": "nominate",
+            "to_step_id": "book",
+            "kind": "information",
+            "label": "Agreed cohort"
+          },
+          {
+            "from_step_id": "design",
+            "to_step_id": "teach",
+            "kind": "information",
+            "label": "Approved material"
+          },
+          {
+            "from_step_id": "book",
+            "to_step_id": "teach",
+            "kind": "information",
+            "label": "Invitations"
+          },
+          {
+            "from_step_id": "teach",
+            "to_step_id": "follow",
+            "kind": "information",
+            "label": "Completed practice session"
+          },
+          {
+            "from_step_id": "teach",
+            "to_step_id": "record",
+            "kind": "information",
+            "label": "Attendance"
+          }
+        ],
+        "proposed": [
+          {
+            "from_step_id": "need",
+            "to_step_id": "design",
+            "kind": "information",
+            "label": "Agreed capability need"
+          },
+          {
+            "from_step_id": "need",
+            "to_step_id": "nominate-check",
+            "kind": "information",
+            "label": "Agreed capability need"
+          },
+          {
+            "from_step_id": "nominate-check",
+            "to_step_id": "book",
+            "kind": "information",
+            "label": "Nominations that pass every check"
+          },
+          {
+            "from_step_id": "nominate-check",
+            "to_step_id": "nominate-resolve",
+            "kind": "escalation",
+            "label": "A nomination has missing details or fails a check"
+          },
+          {
+            "from_step_id": "nominate-resolve",
+            "to_step_id": "book",
+            "kind": "information",
+            "label": "Confirmed cohort"
+          },
+          {
+            "from_step_id": "design",
+            "to_step_id": "teach",
+            "kind": "information",
+            "label": "Human-approved material"
+          },
+          {
+            "from_step_id": "book",
+            "to_step_id": "teach",
+            "kind": "information",
+            "label": "Invitations for approved slots"
+          },
+          {
+            "from_step_id": "teach",
+            "to_step_id": "follow-collect",
+            "kind": "information",
+            "label": "Completed practice session"
+          },
+          {
+            "from_step_id": "follow-collect",
+            "to_step_id": "follow-judge",
+            "kind": "information",
+            "label": "Evidence queue with missing or disputed items marked"
+          },
+          {
+            "from_step_id": "teach",
+            "to_step_id": "record",
+            "kind": "information",
+            "label": "Validated attendance"
+          }
+        ]
+      }
+    }
+  ],
+  "work_changes": [
+    {
+      "current_work": "Agree the capability gap",
+      "change": "Retained",
+      "future_work": "L&D partners still test the diagnosis with plant managers; Head of L&D selects the priority.  ",
+      "executor": "human",
+      "owner_id": "head",
+      "capability": "The team must distinguish a skill gap from staffing or process problems.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Prepare supervisor practice material",
+      "change": "Split or reassigned work",
+      "future_work": "Design Lead supplies job context, revises examples and approves the material. An AI assistant drafts variations when requested. It does not publish or run independently. ",
+      "executor": "hybrid",
+      "owner_id": "design",
+      "capability": "AI can prepare variations; the designer checks job relevance and learning quality.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Check and confirm nominations",
+      "change": "Split or reassigned work",
+      "future_work": "Coordinator confirms missing or disputed details; plant managers confirm employee availability. An agent compares submitted nominations with approved eligibility rules and flags exceptions. ",
+      "executor": "hybrid",
+      "owner_id": "ops",
+      "capability": "Repeated checks can be delegated; eligibility disputes still need human judgement.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Book sessions within agreed slots",
+      "change": "Split or reassigned work",
+      "future_work": " Scheduling agent selects among approved slots and sends approved invitations only when cohort, capacity and availability checks pass. ",
+      "executor": "agent",
+      "owner_id": "ops",
+      "capability": "Standing rules allow routine bookings; Operations Manager handles exceptions.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Facilitate practice and feedback",
+      "change": "Retained",
+      "future_work": "Design Lead and partners continue facilitation, feedback and difficult conversations.  ",
+      "executor": "human",
+      "owner_id": "design",
+      "capability": "Observed behaviour and sensitive group dynamics require the facilitator’s judgement.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Collect evidence of workplace practice",
+      "change": "Split or reassigned work",
+      "future_work": "Partners validate claimed behaviour change, contact managers and decide coaching actions. Follow-up agents send approved prompts and assemble submitted evidence into a review queue. ",
+      "executor": "hybrid",
+      "owner_id": "north",
+      "capability": "Agents organise submissions; partners judge whether practice changed on the job.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "current_work": "Record completed learning",
+      "change": "Split or reassigned work",
+      "future_work": "  The LMS records attendance from a validated attendance file using fixed rules.",
+      "executor": "software",
+      "owner_id": "lms",
+      "capability": "A fixed attendance rule needs ordinary software rather than an agent.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    }
+  ],
+  "levers": [
+    {
+      "name": "Reporting",
+      "current": "Head has two direct reports; four indirect reports.",
+      "proposed": "Head has three direct reports; three indirect reports.",
+      "reason": "Move Digital Learning Specialist to Head of L&D, subject to CHRO agreement. Headcount stays seven.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "name": "Centralisation",
+      "current": "Operations Manager clears each booking list.",
+      "proposed": "Routine bookings follow standing rules; exceptions return to Operations Manager.",
+      "reason": "Centralise the rule while delegating bounded action.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "name": "Span of supervision",
+      "current": "People supervise people; no agents operate.",
+      "proposed": "Two human supervisors oversee two agent services; active run counts remain untested.",
+      "reason": "Agent roles and simultaneous runs are different from human direct reports.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "name": "Standardisation",
+      "current": "Templates exist; people interpret checks and chase submissions.",
+      "proposed": "Explicit roster checks, allowed slots and evidence fields govern delegated work.",
+      "reason": "Consistent rules support delegation; learning quality still needs review.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "name": "Specialisation",
+      "current": "Coordinator spends time on booking and chasing.",
+      "proposed": "Coordinator concentrates on incomplete cases; partners judge practice.",
+      "reason": "Task changes do not imply eliminating a role.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    },
+    {
+      "name": "Coordination",
+      "current": "Email handoffs between design, operations and plant partners.",
+      "proposed": "Shared exception and evidence queues pass clear outputs to named people.",
+      "reason": "Cross-function handoffs need an owner and a condition for completion.",
+      "basis": "Authored fictional L&D exercise; no real participant or company claim."
+    }
+  ],
+  "readiness": [
+    {
+      "need": "Approved example material",
+      "status": "To verify before live use",
+      "owner_id": "design",
+      "validation": "Check job relevance and exclude confidential employee records."
+    },
+    {
+      "need": "Agent checks and access",
+      "status": "To verify before live use",
+      "owner_id": "lms",
+      "validation": "Use a sandbox calendar and invented roster; verify allowed actions, logs and stop control."
+    },
+    {
+      "need": "Supervisor time",
+      "status": "To verify before live use",
+      "owner_id": "ops",
+      "validation": "Measure time reviewing exceptions rather than assuming oversight is free."
+    },
+    {
+      "need": "Reporting change",
+      "status": "To verify before live use",
+      "owner_id": "chro",
+      "validation": "Review proposed Digital Learning Specialist reporting line."
+    }
+  ],
+  "pilot": {
+    "scope": "Four weeks with one fictional 30-person supervisor cohort; sandbox roster and calendar only. Test drafting and booking separately; human process remains authoritative.",
+    "owner_id": "head",
+    "measure": "Compare preparation time, booking accuracy, exception-review time and assessed material quality.",
+    "baseline": "Not measured. Record the current process for a comparable cohort before comparison.",
+    "success": "Proposed: no unauthorised invitations, every seeded exception caught, acceptable material quality and less total coordination effort including review.",
+    "stop": "Stop on an out-of-cohort invitation, unapproved content, missed seeded exception or exposure of personal data.",
+    "review_date": "After four weeks; broader use and reporting change need separate agreement."
+  },
+  "open_questions": [
+    "Would the CHRO approve the proposed reporting change and access scope?",
+    "Can the LMS and calendar support the required checks and stop control?",
+    "What baseline and review capacity does the first trial establish?"
+  ],
+  "history": [
+    {
+      "revision": 1,
+      "initial_choice": "Fictional manager initially favours automating scheduling and follow-up.",
+      "ai_proposal": "Keep diagnosis, content approval and readiness judgement with humans; delegate bounded administrative actions.",
+      "participant_decision": "Authored simulated choice accepts a sandbox trial and changes follow-up to evidence collection only.",
+      "note": "No real participant confirmed this record. It is a fictional worked example."
+    }
+  ],
+  "comparison": {
+    "perspective": "Fictional Head of L&D. Can reallocate work and agree a limited test; CHRO approves reporting changes and technology access.",
+    "scale": "Seven L&D people shown as seven role nodes, plus their CHRO. Two partner roles cover five plants; they are not five additional teams.",
+    "division": [
+      {
+        "id": "needs",
+        "label": "Agree the capability gap",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "head",
+          "human_work": "L&D partners discuss observed supervisor gaps with plant managers; Head of L&D selects the priority.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People diagnose the need",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "human",
+          "owner_id": "head",
+          "human_work": "L&D partners still test the diagnosis with plant managers; Head of L&D selects the priority.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People diagnose the need",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "status": "retained",
+        "reason": "The team must distinguish a skill gap from staffing or process problems.",
+        "short_reason": "The team must distinguish a skill gap from staffing or process problems."
+      },
+      {
+        "id": "design-materials",
+        "label": "Prepare supervisor practice material",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "design",
+          "human_work": "Learning Design Lead writes scenarios and facilitator notes.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Design Lead writes",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "owner_id": "design",
+          "human_work": "Design Lead supplies job context, revises examples and approves the material.",
+          "agent_work": "An AI assistant drafts variations when requested. It does not publish or run independently.",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Design Lead checks and approves",
+          "agent_summary": "Assistant drafts variations",
+          "software_summary": "",
+          "ai_kind": "assistant",
+          "condition": ""
+        },
+        "status": "changed",
+        "reason": "AI can prepare variations; the designer checks job relevance and learning quality.",
+        "short_reason": "AI can prepare variations; the designer checks job relevance and learning quality."
+      },
+      {
+        "id": "nominations",
+        "label": "Check and confirm nominations",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "ops",
+          "human_work": "Coordinator checks names and eligibility against the roster; operations manager resolves exceptions.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Coordinator checks each entry",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "owner_id": "ops",
+          "human_work": "Coordinator confirms missing or disputed details; plant managers confirm employee availability.",
+          "agent_work": "An agent compares submitted nominations with approved eligibility rules and flags exceptions.",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Coordinator resolves exceptions",
+          "agent_summary": "Agent checks nominations",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "No inference from private performance records; no autonomous selection of employees."
+        },
+        "status": "changed",
+        "reason": "Repeated checks can be delegated; eligibility disputes still need human judgement.",
+        "short_reason": "Repeated checks can be delegated; eligibility disputes still need human judgement."
+      },
+      {
+        "id": "booking",
+        "label": "Book sessions within agreed slots",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "ops",
+          "human_work": "Coordinator emails participants, checks slots and creates calendar invitations.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Coordinator books each session",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "agent",
+          "owner_id": "ops",
+          "human_work": "",
+          "agent_work": "Scheduling agent selects among approved slots and sends approved invitations only when cohort, capacity and availability checks pass.",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "",
+          "agent_summary": "Agent books eligible sessions",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "Approved cohort and slots only; stop for a conflict, changed shift or unclear roster."
+        },
+        "status": "changed",
+        "reason": "Standing rules allow routine bookings; Operations Manager handles exceptions.",
+        "short_reason": "Standing rules allow routine bookings; Operations Manager handles exceptions."
+      },
+      {
+        "id": "delivery",
+        "label": "Facilitate practice and feedback",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "design",
+          "human_work": "Design Lead and L&D partners facilitate role practice and give contextual feedback.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People facilitate and coach",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "human",
+          "owner_id": "design",
+          "human_work": "Design Lead and partners continue facilitation, feedback and difficult conversations.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People facilitate and coach",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "status": "retained",
+        "reason": "Observed behaviour and sensitive group dynamics require the facilitator’s judgement.",
+        "short_reason": "Observed behaviour and sensitive group dynamics require the facilitator’s judgement."
+      },
+      {
+        "id": "followup",
+        "label": "Collect evidence of workplace practice",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "north",
+          "human_work": "Coordinator chases managers by email; partners read responses and decide what needs coaching.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People chase and interpret",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "owner_id": "north",
+          "human_work": "Partners validate claimed behaviour change, contact managers and decide coaching actions.",
+          "agent_work": "Follow-up agents send approved prompts and assemble submitted evidence into a review queue.",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Partners judge and coach",
+          "agent_summary": "Agents collect evidence",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "Do not rate people, infer performance or write to appraisal records."
+        },
+        "status": "changed",
+        "reason": "Agents organise submissions; partners judge whether practice changed on the job.",
+        "short_reason": "Agents organise submissions; partners judge whether practice changed on the job."
+      },
+      {
+        "id": "completion",
+        "label": "Record completed learning",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "lms",
+          "human_work": "Digital Learning Specialist reconciles attendance and updates the LMS.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Specialist reconciles attendance",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "software",
+          "owner_id": "lms",
+          "human_work": "",
+          "agent_work": "",
+          "software_work": "The LMS records attendance from a validated attendance file using fixed rules.",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "",
+          "agent_summary": "",
+          "software_summary": "LMS applies fixed rules",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "status": "changed",
+        "reason": "A fixed attendance rule needs ordinary software rather than an agent.",
+        "short_reason": "A fixed attendance rule needs ordinary software rather than an agent."
+      }
+    ],
+    "decisions": [
+      {
+        "id": "priorities",
+        "label": "Select priorities and programme spend",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "head",
+          "human_work": "Head of L&D selects capability priorities and allocates the agreed budget.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Head of L&D decides",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "human",
+          "owner_id": "head",
+          "human_work": "Head of L&D retains priorities and spending decisions.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Head of L&D decides",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "Only the Head of L&D selects capability priorities and allocates programme spend. AI has no part in this decision."
+        },
+        "status": "retained",
+        "reason": "Business priorities and spending remain with the accountable manager.",
+        "short_reason": "Business priorities and spending remain with the accountable manager."
+      },
+      {
+        "id": "publish",
+        "label": "Approve learning material",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "design",
+          "human_work": "Design Lead approves scenarios before use.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Design Lead approves",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "human",
+          "owner_id": "design",
+          "human_work": "Design Lead approves every AI-assisted scenario before use.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Design Lead approves",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "Only the Design Lead approves a scenario for use. The AI assistant drafts material and cannot publish it."
+        },
+        "status": "retained",
+        "reason": "AI drafting does not receive authority to publish learning content.",
+        "short_reason": "AI drafting does not receive authority to publish learning content."
+      },
+      {
+        "id": "routine-booking",
+        "label": "Authorise a routine booking",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "ops",
+          "human_work": "Operations Manager clears the booking list before the coordinator sends invitations.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "Operations Manager clears list",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "agent",
+          "owner_id": "ops",
+          "human_work": "",
+          "agent_work": "Agent may send an invitation under a standing slot, cohort and capacity rule without approval of each routine instance.",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "",
+          "agent_summary": "Agent acts under standing rules",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "The agent may book only an approved cohort member into an approved slot within capacity. Any failed check stops the booking and returns the case to the Operations Manager."
+        },
+        "status": "changed",
+        "reason": "Authority changes from approval of each list to bounded standing permission.",
+        "short_reason": "Authority changes from approval of each list to bounded standing permission."
+      },
+      {
+        "id": "assessment",
+        "label": "Judge supervisor readiness",
+        "outcome_id": "readiness",
+        "current": {
+          "mode": "human",
+          "owner_id": "north",
+          "human_work": "Partners and line managers discuss observed behaviour before recommending readiness.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People assess observed behaviour",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": ""
+        },
+        "proposed": {
+          "mode": "human",
+          "owner_id": "north",
+          "human_work": "Partners and line managers retain the judgement; AI cannot certify readiness.",
+          "agent_work": "",
+          "software_work": "",
+          "basis": "Authored fictional L&D exercise; no real participant or company claim.",
+          "human_summary": "People assess observed behaviour",
+          "agent_summary": "",
+          "software_summary": "",
+          "ai_kind": "agent",
+          "condition": "Partners and line managers judge supervisor readiness. The practice follow-up agents collect evidence and cannot rate, rank or certify a supervisor."
+        },
+        "status": "retained",
+        "reason": "A submitted reflection alone does not establish workplace competence.",
+        "short_reason": "A submitted reflection alone does not establish workplace competence."
+      }
+    ],
+    "reporting": {
+      "status": "changed",
+      "reason": "Digital Learning Specialist moves from Operations Manager to Head of L&D in the proposal; the other reporting lines remain.",
+      "current_context": "Seven L&D staff. The Head has two direct and four indirect reports.",
+      "proposed_context": "Same seven staff. Digital Learning Specialist would report directly to the Head.",
+      "links": {
+        "current": [],
+        "proposed": []
+      }
+    },
+    "organisation": {
+      "current_note": "Current: people and the LMS perform the work; no AI is in operational use.",
+      "proposed_note": "Proposed: human-led learning with bounded agent work. Seven L&D staff remain.",
+      "current": [],
+      "proposed": [
+        {
+          "id": "design-ai",
+          "label": "Design assistant",
+          "supervisor_id": "design",
+          "summary": "Drafts practice variations",
+          "status": "changed",
+          "ai_kind": "assistant",
+          "instances": null,
+          "detail": "Human + AI assistant. The Design Lead prompts the assistant, checks all material and approves its use. This is human-directed assistance; it has no delegated action permissions.",
+          "relationship": "uses"
+        },
+        {
+          "id": "cohort-ai",
+          "label": "Cohort operations",
+          "supervisor_id": "ops",
+          "summary": "Checks names; books slots",
+          "status": "changed",
+          "ai_kind": "agent",
+          "instances": null,
+          "detail": "Human + agent for nomination checks; Agent only for eligible bookings. Operations Manager supervises; Digital Learning Specialist maintains the service. Head of L&D owns the outcome. Only approved cohorts and slots are permitted; exceptions return to Operations Manager.",
+          "relationship": "supervises",
+          "service_id": "cohort"
+        },
+        {
+          "id": "practice-ai",
+          "label": "Practice follow-up",
+          "supervisor_id": "north",
+          "summary": "Collects practice evidence",
+          "status": "changed",
+          "ai_kind": "agent",
+          "instances": null,
+          "detail": "Human + agent. North Partner supervises the shared collection service; both partners judge evidence and coach managers. Digital Learning Specialist maintains access and records. No employee scoring or appraisal writes are permitted.",
+          "relationship": "supervises",
+          "service_id": "practice"
+        }
+      ]
+    }
+  },
+  "exercise": {
+    "version": 1,
+    "stage": "current",
+    "staffing_review": "The Head of L&D keeps all seven L&D posts. Agents take routine nomination checks and bookings, but the Programme Coordinator still resolves incomplete nominations and cases outside the agreed rules, so no post is removed. The Digital Learning Specialist moves to report to the Head of L&D, which needs the CHRO's agreement."
+  }
+}

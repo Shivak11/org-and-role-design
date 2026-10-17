@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+# Participant sessions and rendered output stay out of the repository
+session.json
+*-output/

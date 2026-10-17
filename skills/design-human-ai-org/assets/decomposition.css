@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light;
+  --paper: #F6F2EA;
+  --surface: #FFFDF9;
+  --ink: #191714;
+  --muted: #655F55;
+  --rule: #D9D2C4;
+  --human: #A84D24;
+  --ai: #08776E;
+  font-family: "Avenir Next", Avenir, Arial, sans-serif;
+  font-size: 100%;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+main { max-width: 82rem; margin: 0 auto; padding: 3rem 2rem; }
+header { max-width: 64rem; padding-bottom: 1rem; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.2; }
+h1 { font-size: clamp(2rem, 4vw, 3.3rem); margin: 0 0 1rem; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 .75rem; }
+h3 { font-size: 1.3rem; margin: 0 0 .75rem; }
+p { margin: .65rem 0; white-space: pre-wrap; }
+strong { font-weight: 650; }
+h1, h2, h3, p, th, td, summary { overflow-wrap: anywhere; }
+.position, .unlinked { border-top: 1px solid var(--rule); padding: 2.2rem 0; }
+.role-size { font-size: 1.15rem; color: var(--human); margin: 0 0 1rem; }
+.activity { margin: 1.8rem 0 0; padding: 1.4rem; background: var(--surface); border: 1px solid var(--rule); }
+.state, .unexamined, .shared-work { color: var(--muted); }
+.state { margin-bottom: 1rem; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+th, td { width: 50%; text-align: left; vertical-align: top; padding: 1rem; }
+th { font-size: 1rem; border-bottom: 1px solid var(--rule); }
+td { font-size: 1rem; }
+td p:first-child { margin-top: 0; }
+td p:last-child { margin-bottom: 0; }
+.automation-heading { color: var(--ai); background: #E6F2ED; }
+.human-heading { color: var(--human); background: #F9E9DB; }
+.human-work { border-left: 1px solid var(--rule); }
+details { padding-top: .8rem; border-top: 1px solid var(--rule); font-size: .9375rem; }
+details p { margin-left: 1.2rem; }
+summary { cursor: pointer; color: var(--muted); padding: .35rem 0; }
+summary:focus-visible { outline: 2px solid var(--ai); outline-offset: .2rem; }
+footer { border-top: 1px solid var(--rule); padding-top: 1rem; color: var(--muted); font-size: .9375rem; }
+
+@media (max-width: 42rem) {
+  main { padding: 1.5rem .85rem; }
+  .activity { padding: .75rem; }
+  th, td { padding: .65rem .5rem; }
+  th, td, details { font-size: .9375rem; }
+}
+
+@media print {
+  :root { background: white; }
+  main { max-width: none; padding: 0; }
+  .position, .unlinked { padding: 1.5rem 0; }
+  .activity { break-inside: avoid; }
+  h2, h3, summary { break-after: avoid; }
+  th { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  footer { position: static; }
+}

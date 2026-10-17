@@ -1,0 +1,6 @@
+interface:
+  display_name: "Map a Job to Skills"
+  short_description: "Turn a job description into a skill map and a course"
+  default_prompt: "Use $map-job-to-skills to turn this job description into a four-pillar skill map, then build a learning course from it."
+policy:
+  allow_implicit_invocation: false

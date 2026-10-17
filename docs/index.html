@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Org and Role Design</title>
+<meta name="description" content="Three AI skills for designing organisations and roles when people and AI share the work, and a guide to choosing between them.">
+<style>
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1d1c1a;
+  --muted: #5d5a54;
+  --rule: #ddd8ce;
+  --accent: #0b7a70;
+  --accent-ink: #ffffff;
+  --accent-soft: #e3f1ef;
+  --code-bg: #f1eee8;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161716;
+    --surface: #1f2120;
+    --ink: #ecebe7;
+    --muted: #aaa8a1;
+    --rule: #393b39;
+    --accent: #4cc3b6;
+    --accent-ink: #0f1514;
+    --accent-soft: #1d3330;
+    --code-bg: #262826;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 860px; margin: 0 auto; padding: 48px 20px 72px; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 44px); letter-spacing: -0.01em; }
+h2 { font-size: clamp(24px, 4.2vw, 30px); margin-top: 64px; }
+h3 { font-size: 21px; margin-top: 28px; }
+p { margin: 14px 0 0; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+code { font: 16px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { background: var(--code-bg); border-radius: 8px; padding: 14px 16px; overflow-x: auto; margin: 14px 0 0; }
+pre code { background: none; padding: 0; overflow-wrap: normal; }
+
+.intro { margin-top: 20px; font-size: 19px; max-width: 46em; }
+
+.picker { margin-top: 40px; }
+.picker fieldset { border: 0; padding: 0; margin: 0; }
+.picker legend { font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 600; padding: 0; }
+.choices { display: grid; gap: 12px; margin-top: 16px; }
+.choice {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  font: inherit; color: var(--ink); background: var(--surface);
+  border: 1.5px solid var(--rule); border-radius: 10px; padding: 14px 16px;
+}
+.choice:hover { border-color: var(--accent); }
+.choice[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.choice strong { display: block; font-weight: 600; }
+.answer { margin-top: 18px; min-height: 1.6em; }
+.answer a { font-weight: 600; }
+
+.skill { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--rule); }
+.skill.is-picked h2 { color: var(--accent); }
+.skill h2 { margin-top: 24px; }
+.facts { display: grid; grid-template-columns: 1fr; gap: 0; margin: 20px 0 0; }
+.facts div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.facts dt { font-weight: 600; }
+.facts dd { margin: 4px 0 0; }
+@media (min-width: 700px) {
+  .facts div { display: grid; grid-template-columns: 11em 1fr; gap: 16px; }
+  .facts dd { margin: 0; }
+}
+
+.sample { margin-top: 18px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; overflow-x: auto; }
+.sample table { border-collapse: collapse; width: 100%; min-width: 320px; font-size: 16px; }
+.sample th, .sample td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+.sample th { font-weight: 600; }
+.sample tr:last-child td { border-bottom: 0; }
+.sample .ai { border-left: 4px solid var(--accent); }
+.sample ol { margin: 6px 0 0; padding-left: 1.3em; }
+.sample .pair { display: grid; gap: 16px; }
+@media (min-width: 640px) { .sample .pair { grid-template-columns: 1fr 1fr; } }
+.sample .pair h4 { margin: 0; font-size: 16px; }
+.sample .changed { color: var(--accent); font-weight: 600; }
+.caption { color: var(--muted); font-size: 16px; margin-top: 10px; }
+
+.flow { margin-top: 18px; padding-left: 1.3em; }
+.flow li { margin-top: 8px; }
+footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Three AI skills for designing organisations and roles when people and AI share the work</h1>
+  <p class="intro">You install the plugin in Claude Code or Codex, or copy a skill folder into another assistant, and then ask the assistant to run a skill with you. Each skill works through a conversation about your own work and keeps a record of your choices.</p>
+
+  <section class="picker" aria-labelledby="pick-heading">
+    <fieldset>
+      <legend id="pick-heading">What do you want to do?</legend>
+      <div class="choices" role="group" aria-labelledby="pick-heading">
+        <button type="button" class="choice" data-target="design-human-ai-org" aria-pressed="false">
+          <strong>Work out how my team or function would be organised if AI agents took on part of its work</strong>
+        </button>
+        <button type="button" class="choice" data-target="run-org-structure-exercise" aria-pressed="false">
+          <strong>Teach a class, or learn on my own, how span of control, centralisation and related ideas work</strong>
+        </button>
+        <button type="button" class="choice" data-target="map-job-to-skills" aria-pressed="false">
+          <strong>Find out what one job requires, or build a course that prepares people for it</strong>
+        </button>
+      </div>
+    </fieldset>
+    <p class="answer" id="answer" aria-live="polite"></p>
+  </section>
+
+  <section class="skill" id="design-human-ai-org" aria-labelledby="h-design">
+    <h2 id="h-design">Redesign a team's work for people and AI agents</h2>
+    <p>You choose one workflow your team runs often. The assistant draws the current hierarchy, then goes through the workflow step by step and asks whether AI could do each step and, if not, why. It shows each position's work split into the part AI or software would do and the part a person still does. With that split in front of you, you decide who takes the remaining judgements and how many posts the work needs. You make every choice; the assistant records it.</p>
+    <dl class="facts">
+      <div><dt>You bring</dt><dd>Your role, one recurring workflow and the people who do it, by role title. No employee records are needed.</dd></div>
+      <div><dt>It takes</dt><dd>About 30 to 45 minutes.</dd></div>
+      <div><dt>You get</dt><dd>Current and proposed views of the hierarchy, the work split, reporting lines and decision authority, with each agent shown next to the person who supervises it, a workbook of every choice, and a limited trial with an owner, a measure and a stopping rule.</dd></div>
+      <div><dt>Where it stops</dt><dd>It ends with a proposal. It does not connect to company systems or make any personnel decision.</dd></div>
+    </dl>
+    <div class="sample" role="figure" aria-labelledby="cap-design">
+      <table>
+        <thead><tr><th scope="col">Position</th><th scope="col" class="ai">AI or software work</th><th scope="col">Remaining human work</th></tr></thead>
+        <tbody>
+          <tr><td>Service coordinator</td><td class="ai">An agent proposes a category for each request and sends uncertain cases for review.</td><td>Resolves uncertain or new categories.</td></tr>
+          <tr><td>Support associates</td><td class="ai">An agent sends a status update only when it matches an approved template.</td><td>None for a normal update. The senior support specialist defines the templates, handles exceptions and supervises the agents.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption" id="cap-design">The split for two activities, grouped by the person who does the work today, from the fictional service desk example included with the skill.</p>
+    <p>To start, ask: <code>Use design-human-ai-org to redesign one workflow in my team for people and AI agents.</code></p>
+  </section>
+
+  <section class="skill" id="run-org-structure-exercise" aria-labelledby="h-org">
+    <h2 id="h-org">Learn organisation structure from a workflow you redesign</h2>
+    <p>The learner picks a refund, a purchase request, a new employee joining or a workflow of their own, and writes how it runs today. They then propose one change. The assistant keeps the before and after sequences visible and asks short questions about who decides, what information they use and who reports to whom. Only after the learner has made their choices does the assistant name the concepts those choices show.</p>
+    <dl class="facts">
+      <div><dt>The learner brings</dt><dd>A workflow they can describe, real or imagined.</dd></div>
+      <div><dt>It takes</dt><dd>About 20 minutes to develop the workflow and 5 to 10 minutes to discuss it in class.</dd></div>
+      <div><dt>The learner gets</dt><dd>Their before and after workflow, an explanation of the structure concepts it demonstrates, one risk with a way to check it, and a short record they can take into <code>design-human-ai-org</code>.</dd></div>
+      <div><dt>Where it stops</dt><dd>It ends with the redesigned structure and does not assign any work to AI.</dd></div>
+    </dl>
+    <div class="sample" role="figure" aria-labelledby="cap-org">
+      <div class="pair">
+        <div>
+          <h4>What happened before</h4>
+          <ol>
+            <li>The customer gives the receipt to an associate.</li>
+            <li>The associate checks the purchase record and messages the manager.</li>
+            <li>The manager decides every refund.</li>
+            <li>Accounts pays.</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Your completed redesign</h4>
+          <ol>
+            <li>The customer gives the receipt to an associate.</li>
+            <li>The associate checks the receipt and purchase record.</li>
+            <li><span class="changed">Below Rs 2,000 the associate decides;</span> above it the manager decides.</li>
+            <li>Accounts pays.</li>
+          </ol>
+        </div>
+      </div>
+      <p>The decision on small refunds has moved to the associate, which decentralises it. The written limit standardises and formalises the decision. The manager still has six direct reports, so the span of control is unchanged.</p>
+    </div>
+    <p class="caption" id="cap-org">A shortened version of the worked example included with the skill.</p>
+    <p>To start, ask: <code>Use run-org-structure-exercise to run the workflow exercise with me.</code></p>
+  </section>
+
+  <section class="skill" id="map-job-to-skills" aria-labelledby="h-jd">
+    <h2 id="h-jd">Turn a job description into a skill map and a course</h2>
+    <p>You paste or upload a job description. The assistant identifies the role, level and discipline, keeps only the skills the employer would reject a candidate for lacking, and sorts them into four pillars. If you ask for a course, it builds modules of eleven screens each, moving from concepts to scenarios, people problems and a written case, and ends with a mock interview script.</p>
+    <dl class="facts">
+      <div><dt>You bring</dt><dd>One job description.</dd></div>
+      <div><dt>You get</dt><dd>A skill map in JSON with 8 to 12 skills, each with a difficulty, a weight, a description of how it shows up in this job and a sample interview question, plus two glossaries of terms. On request, a full course in JSON.</dd></div>
+      <div><dt>Where it stops</dt><dd>It looks at one role at a time and does not look at how roles fit together in a team.</dd></div>
+    </dl>
+    <div class="sample" role="figure" aria-labelledby="cap-jd">
+      <table>
+        <thead><tr><th scope="col">Pillar</th><th scope="col">Skills selected</th><th scope="col">Weight</th></tr></thead>
+        <tbody>
+          <tr><td>Technical</td><td>Project planning, stakeholder analysis, pricing strategy</td><td>0.25</td></tr>
+          <tr><td>Cognitive</td><td>Structured problem breakdown, synthesis under ambiguity</td><td>0.25</td></tr>
+          <tr><td>Behavioural</td><td>Communication clarity, stakeholder orchestration, organisational fit</td><td>0.35</td></tr>
+          <tr><td>Domain</td><td>Bid terms such as RFP and compliance matrix; commercial terms such as fixed-price and SoW</td><td>0.15</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption" id="cap-jd">The skill map for a fictional presales management trainee role, from the example included with the skill.</p>
+    <p>To start, ask: <code>Use map-job-to-skills to turn this job description into a skill map.</code></p>
+  </section>
+
+  <section aria-labelledby="h-together">
+    <h2 id="h-together">Using two skills in sequence</h2>
+    <ol class="flow">
+      <li>A class runs <code>run-org-structure-exercise</code> on a workflow and learns the structure concepts from its own redesign.</li>
+      <li>Each group copies the closing record into <code>design-human-ai-org</code>, which starts from that workflow and asks which steps AI could take on.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-install">
+    <h2 id="h-install">Install</h2>
+    <h3>Claude Code</h3>
+<pre><code>claude plugin marketplace add Shivak11/org-and-role-design
+claude plugin install org-and-role-design@org-and-role-design</code></pre>
+    <h3>Codex</h3>
+<pre><code>codex plugin marketplace add Shivak11/org-and-role-design
+codex plugin add org-and-role-design@org-and-role-design</code></pre>
+    <h3>Other assistants</h3>
+    <p>Copy a folder from <code>skills/</code> in the <a href="https://github.com/Shivak11/org-and-role-design">repository</a> into your assistant's skills directory, or upload it where your assistant accepts skill folders.</p>
+  </section>
+
+  <footer>
+    <p>Made by <a href="https://www.shivakakkar.com/">Shiva Kakkar</a>. MIT licence.</p>
+  </footer>
+</main>
+<script>
+(function () {
+  var messages = {
+    "design-human-ai-org": "Use design-human-ai-org.",
+    "run-org-structure-exercise": "Use run-org-structure-exercise.",
+    "map-job-to-skills": "Use map-job-to-skills."
+  };
+  var buttons = document.querySelectorAll(".choice");
+  var answer = document.getElementById("answer");
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var id = button.getAttribute("data-target");
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b === button)); });
+      document.querySelectorAll(".skill").forEach(function (s) { s.classList.toggle("is-picked", s.id === id); });
+      answer.innerHTML = "";
+      var link = document.createElement("a");
+      link.href = "#" + id;
+      link.textContent = messages[id] + " See what it does and what it gives you.";
+      answer.appendChild(link);
+    });
+  });
+})();
+</script>
+</body>
+</html>

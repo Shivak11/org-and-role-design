@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "title": "Regional finance: current and proposed work",
+  "status": "draft",
+  "revision": 1,
+  "confirmation": {
+    "accepted": false,
+    "revision": 1,
+    "wording": ""
+  },
+  "organisation": {
+    "label": "Fictional organisation",
+    "scope": "A middle manager overseeing a fictional 40-person regional finance operation.",
+    "horizon": "A proposed limited trial",
+    "context": "All people, quantities and choices in this example are fictional.",
+    "exclusions": "Only the displayed units and activities are examined. Other work remains outside this proposal."
+  },
+  "evidence_note": "Fictional exercise record for demonstrating the portable skill. No live process has changed.",
+  "outcomes": [
+    {
+      "id": "outcome",
+      "name": "Deliver the selected service accurately and on time",
+      "owner_id": "ops",
+      "success": "Agree service-quality and response-time measures before the trial.",
+      "basis": "Fictional example; no target measured."
+    }
+  ],
+  "current_roles": [
+    {
+      "id": "controller",
+      "label": "Regional Finance Controller",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "ops",
+      "label": "Finance Operations Manager",
+      "parent_id": "controller",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "analyst",
+      "label": "Exception Analyst",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ap",
+      "label": "Accounts Payable Lead",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ar",
+      "label": "Accounts Receivable Lead",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "systems",
+      "label": "Finance Systems Lead",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "outside_scope"
+    }
+  ],
+  "proposed_roles": [
+    {
+      "id": "controller",
+      "label": "Regional Finance Controller",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "ops",
+      "label": "Finance Operations Manager",
+      "parent_id": "controller",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "analyst",
+      "label": "Exception Analyst",
+      "parent_id": "controller",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "changed",
+      "reason": "Proposed direct escalation and coaching by the Controller for cross-team exceptions; requires approval.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ap",
+      "label": "Accounts Payable Lead",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ar",
+      "label": "Accounts Receivable Lead",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "systems",
+      "label": "Finance Systems Lead",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "outside_scope"
+    }
+  ],
+  "services": [
+    {
+      "id": "invoice",
+      "label": "Invoice evidence and routing agents",
+      "outcome_owner_id": "ops",
+      "supervisor_id": "ap",
+      "service_owner_id": "systems",
+      "availability": "Proposed; access and performance not verified.",
+      "shared_with": "Only the selected team in this example.",
+      "agent_roles": [
+        {
+          "id": "invoice-agent",
+          "label": "Invoice evidence and routing agents",
+          "tasks": [
+            "Prepare invoice evidence.",
+            "Route complete cases within approved rules."
+          ],
+          "autonomy": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "inputs": "Permitted case records and approved instructions.",
+          "outputs": "Result with evidence and any unresolved issue.",
+          "tools": [
+            "Required system access to confirm"
+          ],
+          "escalation_to_id": "ap",
+          "escalation_condition": "Missing evidence or an action outside the specified boundary.",
+          "instances": null
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "invoice-to-payment",
+      "label": "Take a supplier invoice to payment authorisation",
+      "outcome_id": "outcome",
+      "coverage": "One invoice case traced from evidence preparation to the Controller's authorisation.",
+      "current": [
+        {
+          "id": "prepare",
+          "activity_id": "invoice",
+          "action": "Organise invoice evidence",
+          "actor_type": "agent",
+          "actor_id": null,
+          "actor_label": "Existing invoice evidence agents",
+          "owner_id": "ap",
+          "input": "Supplier invoice and related records",
+          "output": "Organised invoice evidence",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "inspect",
+          "activity_id": "invoice",
+          "action": "Inspect unusual or incomplete evidence",
+          "actor_type": "human",
+          "actor_id": "analyst",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Unusual or incomplete evidence",
+          "output": "Checked evidence or an open query",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "route",
+          "activity_id": "routes",
+          "action": "Send the complete case to the authorised approver",
+          "actor_type": "human",
+          "actor_id": "ap",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Complete matching case",
+          "output": "Case with the authorised approver",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "authorise",
+          "action": "Authorise the payment",
+          "actor_type": "human",
+          "actor_id": "controller",
+          "actor_label": "",
+          "owner_id": "controller",
+          "input": "Routed case",
+          "output": "Authorisation decision",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "proposed": [
+        {
+          "id": "prepare",
+          "activity_id": "invoice",
+          "action": "Prepare invoice evidence",
+          "actor_type": "agent",
+          "actor_id": "invoice-agent",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Supplier invoice and related records",
+          "output": "Organised invoice evidence",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "inspect",
+          "activity_id": "invoice",
+          "action": "Check unusual or incomplete evidence",
+          "actor_type": "human",
+          "actor_id": "analyst",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Unusual or incomplete evidence",
+          "output": "Checked evidence or an open query",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "route",
+          "activity_id": "routes",
+          "action": "Route the complete case to the authorised approver",
+          "actor_type": "agent",
+          "actor_id": "invoice-agent",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Complete matching case",
+          "output": "Case with the authorised approver, or a routing exception",
+          "approval_by_id": null,
+          "condition": "Only when the required evidence is present and the case is within the routing rule."
+        },
+        {
+          "id": "route-exception",
+          "action": "Handle a routing exception",
+          "actor_type": "human",
+          "actor_id": "ap",
+          "actor_label": "",
+          "owner_id": "ap",
+          "input": "Case the agents could not route",
+          "output": "Case with the authorised approver, or returned with a query",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "authorise",
+          "action": "Authorise the payment",
+          "actor_type": "human",
+          "actor_id": "controller",
+          "actor_label": "",
+          "owner_id": "controller",
+          "input": "Routed case",
+          "output": "Authorisation decision",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "relations": {
+        "current": [
+          {
+            "from_step_id": "prepare",
+            "to_step_id": "route",
+            "kind": "information",
+            "label": "Complete matching evidence"
+          },
+          {
+            "from_step_id": "prepare",
+            "to_step_id": "inspect",
+            "kind": "escalation",
+            "label": "Evidence is unusual or incomplete"
+          },
+          {
+            "from_step_id": "inspect",
+            "to_step_id": "route",
+            "kind": "information",
+            "label": "Checked evidence"
+          },
+          {
+            "from_step_id": "route",
+            "to_step_id": "authorise",
+            "kind": "information",
+            "label": "Complete case for authorisation"
+          }
+        ],
+        "proposed": [
+          {
+            "from_step_id": "prepare",
+            "to_step_id": "route",
+            "kind": "information",
+            "label": "Complete matching evidence"
+          },
+          {
+            "from_step_id": "prepare",
+            "to_step_id": "inspect",
+            "kind": "escalation",
+            "label": "Evidence is unusual or incomplete"
+          },
+          {
+            "from_step_id": "inspect",
+            "to_step_id": "route",
+            "kind": "information",
+            "label": "Checked evidence"
+          },
+          {
+            "from_step_id": "route",
+            "to_step_id": "route-exception",
+            "kind": "escalation",
+            "label": "Required evidence is missing or the case is outside the routing rule"
+          },
+          {
+            "from_step_id": "route",
+            "to_step_id": "authorise",
+            "kind": "information",
+            "label": "Complete case for authorisation"
+          },
+          {
+            "from_step_id": "route-exception",
+            "to_step_id": "authorise",
+            "kind": "information",
+            "label": "Routed case for authorisation"
+          }
+        ]
+      }
+    }
+  ],
+  "work_changes": [],
+  "levers": [],
+  "readiness": [],
+  "pilot": {
+    "scope": "Limited authorised cases, if locally approved.",
+    "owner_id": "ops",
+    "measure": "Accuracy, elapsed time and human review demand.",
+    "baseline": "Not measured.",
+    "success": "To agree before starting.",
+    "stop": "Pause on untraceable outputs or action beyond permission.",
+    "review_date": "To agree."
+  },
+  "open_questions": [
+    "Required access, review capacity and trial measures remain to be checked."
+  ],
+  "history": [],
+  "comparison": {
+    "perspective": "Finance Operations Manager; reporting changes require the Controller’s agreement.",
+    "scale": "40 people across the operation. Six roles are shown; role boxes are not headcounts.",
+    "division": [
+      {
+        "id": "invoice",
+        "label": "Prepare invoice evidence",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "hybrid",
+          "human_work": "Analysts inspect unusual or incomplete evidence.",
+          "agent_work": "Existing agents organise invoice records for review.",
+          "owner_id": "ap",
+          "basis": "Fictional teaching example.",
+          "human_summary": "Analysts inspect unusual or incomplete evidence.",
+          "agent_summary": "Existing agents organise invoice records for review."
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "human_work": "Analysts continue to check exceptions.",
+          "agent_work": "The same agents prepare evidence under the current limits.",
+          "owner_id": "ap",
+          "basis": "Fictional teaching example.",
+          "human_summary": "Analysts continue to check exceptions.",
+          "agent_summary": "The same agents prepare evidence under the current limits."
+        },
+        "status": "retained",
+        "reason": "The fictional manager retains an existing use of agents.",
+        "short_reason": "The fictional manager retains an existing use of agents."
+      },
+      {
+        "id": "routes",
+        "label": "Route complete matching cases",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "The payable lead sends complete cases to the authorised approver.",
+          "agent_work": "Agents prepare evidence but do not route it.",
+          "owner_id": "ap",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The payable lead sends complete cases to the authorised approver.",
+          "agent_summary": "Agents prepare evidence but do not route it."
+        },
+        "proposed": {
+          "mode": "agent",
+          "human_work": "The lead owns the permitted routing rule and receives exceptions.",
+          "agent_work": "Agents send complete cases to the correct approver when required evidence is present.",
+          "owner_id": "ap",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The lead owns the permitted routing rule and receives exceptions.",
+          "agent_summary": "Agents send complete cases to the correct approver when required evidence is present."
+        },
+        "status": "changed",
+        "reason": "Routing is delegated; payment authority remains with a human.",
+        "short_reason": "Routing is delegated; payment authority remains with a human."
+      }
+    ],
+    "decisions": [
+      {
+        "id": "pay",
+        "label": "Authorise a payment",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "The Controller gives payment authorisation.",
+          "agent_work": "Agents have no payment authority.",
+          "owner_id": "controller",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The Controller gives payment authorisation.",
+          "agent_summary": "Agents have no payment authority."
+        },
+        "proposed": {
+          "mode": "human",
+          "human_work": "The Controller continues to authorise payments.",
+          "agent_work": "Agents provide preparation and routing only.",
+          "owner_id": "controller",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The Controller continues to authorise payments.",
+          "agent_summary": "Agents provide preparation and routing only.",
+          "condition": "Only the Controller authorises a payment. Agents prepare evidence and route complete cases, and they cannot approve or release a payment."
+        },
+        "status": "retained",
+        "reason": "The proposed work change does not alter payment authority.",
+        "short_reason": "The proposed work change does not alter payment authority."
+      }
+    ],
+    "reporting": {
+      "status": "changed",
+      "reason": "The analyst would report directly to the Controller. This is a proposal outside the Operations Manager’s sole authority.",
+      "current_context": "Relationships supplied for the fictional example.",
+      "proposed_context": "Reporting change awaits the Controller’s approval.",
+      "links": {
+        "current": [
+          {
+            "from_id": "systems",
+            "to_id": "ops",
+            "kind": "functional",
+            "label": "Provides system controls; no formal reporting change."
+          }
+        ],
+        "proposed": [
+          {
+            "from_id": "systems",
+            "to_id": "ops",
+            "kind": "functional",
+            "label": "Provides system controls; no formal reporting change."
+          }
+        ]
+      }
+    },
+    "organisation": {
+      "current_note": "Recorded current AI is shown; unresolved supervision remains detached.",
+      "proposed_note": "Proposed work and supervision are shown; inspect each node for its boundaries.",
+      "current": [
+        {
+          "id": "current-invoice-ai",
+          "label": "Invoice evidence agents",
+          "supervisor_id": null,
+          "summary": "Organise invoice records",
+          "detail": "Existing agents prepare evidence; their current supervisor was not established in this example.",
+          "status": "unassessed",
+          "ai_kind": "agent",
+          "instances": null,
+          "relationship": "uses"
+        }
+      ],
+      "proposed": [
+        {
+          "id": "org-invoice",
+          "label": "Invoice evidence and routing agents",
+          "supervisor_id": "ap",
+          "summary": "Invoice evidence and routing agents",
+          "detail": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "status": "clarified",
+          "ai_kind": "agent",
+          "instances": null,
+          "relationship": "supervises",
+          "service_id": "invoice"
+        }
+      ]
+    }
+  },
+  "exercise": {
+    "version": 1,
+    "stage": "current",
+    "staffing_review": "The Finance Operations Manager keeps every post in the six roles shown. Agents route complete cases, but the Accounts Payable Lead keeps the routing rule, the exceptions and the agents' supervision, and analysts still check unusual evidence, so no post is removed. The Exception Analyst moves to report to the Controller, which needs the Controller's approval. Post counts within each role and across the rest of the 40-person operation were not examined."
+  }
+}

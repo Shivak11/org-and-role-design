@@ -1,0 +1,40 @@
+/* Workflow records use the comparison's existing local fonts and semantic colours. */
+.workflow-record{margin:26px 0 38px;min-width:0}
+.workflow-figure{margin:0;min-width:0}
+.workflow-record h2{font-size:1.9rem;margin:0 0 10px}
+.workflow-outcome{max-width:920px;margin:0 0 18px}
+.workflow-policy{border-block:1px solid var(--rule);padding:12px 0;margin:15px 0 23px}
+.workflow-policy summary{font-weight:400}
+.workflow-policy p{max-width:1000px;margin-bottom:3px}
+.workflow-side{min-width:0;margin:22px 0}
+.workflow-side h3{font-size:1.45rem;margin:0 0 12px}
+.workflow-side-note,.workflow-empty{max-width:1000px;margin:10px 0 18px}
+.workflow-side-current:has(.workflow-empty){padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.workflow-line-key{display:flex;gap:24px;flex-wrap:wrap;list-style:none;padding:0;margin:12px 0 14px;font-size:.88rem;color:var(--muted)}
+.workflow-line-key li{display:flex;align-items:center;gap:9px}
+.workflow-key-line{display:inline-block;width:37px;border-top:1.5px solid var(--muted)}
+.workflow-key-line.authority{border-top:3px solid var(--human)}
+.workflow-key-line.escalation{border-top:2px dashed var(--human)}
+.comparison-panel .workflow-diagram>svg{min-width:1000px;width:100%;height:auto}
+.workflow-node:focus{outline:none}
+.workflow-node:focus .workflow-node-border,.workflow-node:focus .workflow-node-border>path{stroke:var(--agent);stroke-width:3}
+.workflow-step-register{margin:19px 0 0;min-width:0}
+.workflow-step-details{border-top:1px solid var(--rule);padding:13px 2px;scroll-margin-top:20px;overflow-wrap:anywhere}
+.workflow-step-details summary{font-weight:400;padding-right:12px}
+.workflow-step-number{font-size:.82rem;color:var(--muted);display:inline-block;min-width:22px;margin-right:6px}
+.workflow-step-details[open]{background:var(--surface);padding:18px}
+.workflow-step-details:target,.workflow-relation-detail:target{outline:2px solid var(--agent);outline-offset:3px}
+.workflow-step-details dl{display:grid;grid-template-columns:1fr 1fr;gap:15px 30px;margin:22px 0 6px}
+.workflow-step-details dl>div{min-width:0}
+.workflow-step-details dt{font-size:.87rem;color:var(--muted);margin:0 0 5px}
+.workflow-step-details dd{margin:0;line-height:1.55;white-space:pre-line}
+.workflow-step-details a,.workflow-relation-register a{color:var(--agent);text-underline-offset:3px}
+.workflow-step-relations{border-top:1px solid var(--rule);padding-top:15px;line-height:1.6}
+.workflow-relation-register{border-block:1px solid var(--rule);padding:15px 2px;margin-top:15px}
+.workflow-relation-register summary{font-weight:400}
+.workflow-relation-register ol{padding-left:24px}
+.workflow-relation-detail{padding:10px 5px;line-height:1.5;scroll-margin-top:20px;overflow-wrap:anywhere}
+.workflow-relation-detail strong{font-weight:500}
+.workflow-relation-detail p{margin:5px 0}
+@media(max-width:700px){.workflow-record h2{font-size:1.5rem}.workflow-side h3{font-size:1.25rem}.workflow-line-key{gap:10px 18px}.workflow-step-details dl{grid-template-columns:1fr;gap:16px}.workflow-step-details[open]{padding:14px}.workflow-policy{margin-top:12px}}
+@media print{.comparison-panel .workflow-diagram>svg{min-width:0;max-width:100%;width:100%;height:auto}.workflow-diagram{overflow:visible}.workflow-step-details,.workflow-relation-detail{break-inside:avoid}.workflow-step-register{break-before:page}.workflow-step-details dl{grid-template-columns:1fr 1fr}.workflow-line-key{break-after:avoid}.workflow-policy{break-inside:avoid}}

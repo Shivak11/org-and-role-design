@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design a Human and AI Organisation"
+  short_description: "Redesign roles and reporting for work shared with AI agents"
+  default_prompt: "Use $design-human-ai-org to take one workflow from my team, show the current hierarchy, split each position's work between AI and people, and help me decide the proposed structure."
+policy:
+  allow_implicit_invocation: false

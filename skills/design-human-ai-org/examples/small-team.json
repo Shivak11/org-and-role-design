@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "title": "Service desk: current and proposed work",
+  "status": "draft",
+  "revision": 1,
+  "confirmation": {
+    "accepted": false,
+    "revision": 1,
+    "wording": ""
+  },
+  "organisation": {
+    "label": "Fictional organisation",
+    "scope": "A manager and four direct reports handling customer support.",
+    "horizon": "A proposed limited trial",
+    "context": "All people, quantities and choices in this example are fictional.",
+    "exclusions": "Only the displayed units and activities are examined. Other work remains outside this proposal."
+  },
+  "evidence_note": "Fictional exercise record for demonstrating the portable skill. No live process has changed.",
+  "outcomes": [
+    {
+      "id": "outcome",
+      "name": "Deliver the selected service accurately and on time",
+      "owner_id": "manager",
+      "success": "Agree service-quality and response-time measures before the trial.",
+      "basis": "Fictional example; no target measured."
+    }
+  ],
+  "current_roles": [
+    {
+      "id": "manager",
+      "label": "Service Desk Manager",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "lead",
+      "label": "Senior Support Specialist",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "associate-a",
+      "label": "Support Associate A",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "associate-b",
+      "label": "Support Associate B",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coordinator",
+      "label": "Service Coordinator",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "proposed_roles": [
+    {
+      "id": "manager",
+      "label": "Service Desk Manager",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "lead",
+      "label": "Senior Support Specialist",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "associate-a",
+      "label": "Support Associate A",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "associate-b",
+      "label": "Support Associate B",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coordinator",
+      "label": "Service Coordinator",
+      "parent_id": "manager",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "services": [
+    {
+      "id": "triage",
+      "label": "Request classification and status agents",
+      "outcome_owner_id": "manager",
+      "supervisor_id": "lead",
+      "service_owner_id": null,
+      "availability": "Proposed; access and performance not verified.",
+      "shared_with": "Only the selected team in this example.",
+      "agent_roles": [
+        {
+          "id": "triage-agent",
+          "label": "Request classification and status agents",
+          "tasks": [
+            "Propose request categories.",
+            "Send approved status updates within agreed constraints."
+          ],
+          "autonomy": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "inputs": "Permitted case records and approved instructions.",
+          "outputs": "Result with evidence and any unresolved issue.",
+          "tools": [
+            "Required system access to confirm"
+          ],
+          "escalation_to_id": "lead",
+          "escalation_condition": "Missing evidence or an action outside the specified boundary.",
+          "instances": null
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "customer-request",
+      "label": "Handle an incoming customer request",
+      "outcome_id": "outcome",
+      "coverage": "One customer request traced from arrival to a status update, including the refund exception route.",
+      "current": [
+        {
+          "id": "classify",
+          "activity_id": "categorise",
+          "action": "Read the request and choose a queue",
+          "actor_type": "human",
+          "actor_id": "coordinator",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Incoming customer request",
+          "output": "Request in a queue",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "update",
+          "activity_id": "status",
+          "action": "Check status and send the approved template",
+          "actor_type": "human",
+          "actor_id": null,
+          "actor_label": "",
+          "owner_id": "lead",
+          "input": "Queued request and its case status",
+          "output": "Status update sent to the customer",
+          "approval_by_id": null,
+          "condition": "",
+          "eligible_actor_ids": [
+            "associate-a",
+            "associate-b"
+          ]
+        },
+        {
+          "id": "refund",
+          "action": "Decide the refund exception",
+          "actor_type": "human",
+          "actor_id": "manager",
+          "actor_label": "",
+          "owner_id": "manager",
+          "input": "Refund exception request",
+          "output": "Approved or refused exception",
+          "approval_by_id": null,
+          "condition": "Only when the customer asks for a refund exception."
+        }
+      ],
+      "proposed": [
+        {
+          "id": "propose",
+          "activity_id": "categorise",
+          "action": "Propose a category with evidence",
+          "actor_type": "agent",
+          "actor_id": "triage-agent",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Incoming customer request",
+          "output": "Proposed category, or an uncertain case",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "resolve",
+          "activity_id": "categorise",
+          "action": "Resolve an uncertain or new category",
+          "actor_type": "human",
+          "actor_id": "coordinator",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Uncertain or new-category request",
+          "output": "Confirmed category",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "update",
+          "activity_id": "status",
+          "action": "Send the matching approved status template",
+          "actor_type": "agent",
+          "actor_id": "triage-agent",
+          "actor_label": "",
+          "owner_id": "lead",
+          "input": "Categorised request and verified case status",
+          "output": "Status update sent to the customer, or an exception",
+          "approval_by_id": null,
+          "condition": "Only when the case status and recipient are verified and an approved template matches."
+        },
+        {
+          "id": "status-exception",
+          "action": "Handle a status update exception",
+          "actor_type": "human",
+          "actor_id": "lead",
+          "actor_label": "",
+          "owner_id": "lead",
+          "input": "Case the agents could not update",
+          "output": "Resolved status exception",
+          "approval_by_id": null,
+          "condition": ""
+        },
+        {
+          "id": "refund",
+          "action": "Decide the refund exception",
+          "actor_type": "human",
+          "actor_id": "manager",
+          "actor_label": "",
+          "owner_id": "manager",
+          "input": "Refund exception request and any agent-prepared case summary",
+          "output": "Approved or refused exception",
+          "approval_by_id": null,
+          "condition": "Only when the customer asks for a refund exception."
+        }
+      ],
+      "relations": {
+        "current": [
+          {
+            "from_step_id": "classify",
+            "to_step_id": "update",
+            "kind": "information",
+            "label": "Request in a queue"
+          },
+          {
+            "from_step_id": "classify",
+            "to_step_id": "refund",
+            "kind": "escalation",
+            "label": "Customer asks for a refund exception"
+          }
+        ],
+        "proposed": [
+          {
+            "from_step_id": "propose",
+            "to_step_id": "update",
+            "kind": "information",
+            "label": "Clear category"
+          },
+          {
+            "from_step_id": "propose",
+            "to_step_id": "resolve",
+            "kind": "escalation",
+            "label": "Category is uncertain or new"
+          },
+          {
+            "from_step_id": "resolve",
+            "to_step_id": "update",
+            "kind": "information",
+            "label": "Confirmed category"
+          },
+          {
+            "from_step_id": "update",
+            "to_step_id": "status-exception",
+            "kind": "escalation",
+            "label": "Status, recipient or template cannot be verified"
+          },
+          {
+            "from_step_id": "propose",
+            "to_step_id": "refund",
+            "kind": "escalation",
+            "label": "Customer asks for a refund exception"
+          }
+        ]
+      }
+    }
+  ],
+  "work_changes": [],
+  "levers": [],
+  "readiness": [],
+  "pilot": {
+    "scope": "Limited authorised cases, if locally approved.",
+    "owner_id": "manager",
+    "measure": "Accuracy, elapsed time and human review demand.",
+    "baseline": "Not measured.",
+    "success": "To agree before starting.",
+    "stop": "Pause on untraceable outputs or action beyond permission.",
+    "review_date": "To agree."
+  },
+  "open_questions": [
+    "Required access, review capacity and trial measures remain to be checked."
+  ],
+  "history": [],
+  "comparison": {
+    "perspective": "A first-line service desk manager.",
+    "scale": "Five people in this fictional team, including the manager. No agents currently used.",
+    "division": [
+      {
+        "id": "categorise",
+        "label": "Classify incoming requests",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "The coordinator reads requests and chooses a queue.",
+          "agent_work": "No agent work today.",
+          "owner_id": "coordinator",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The coordinator reads requests and chooses a queue.",
+          "agent_summary": "No agent work today."
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "human_work": "The coordinator resolves uncertain or new categories.",
+          "agent_work": "Agents propose a category with evidence and send uncertain cases for review.",
+          "owner_id": "coordinator",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The coordinator resolves uncertain or new categories.",
+          "agent_summary": "Agents propose a category with evidence and send uncertain cases for review."
+        },
+        "status": "changed",
+        "reason": "Routine classification moves to agents; ambiguous cases remain with the coordinator.",
+        "short_reason": "Routine classification moves to agents; ambiguous cases remain with the coordinator."
+      },
+      {
+        "id": "status",
+        "label": "Send an approved status update",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "An associate checks status and sends the approved template.",
+          "agent_work": "No agent work today.",
+          "owner_id": "lead",
+          "basis": "Fictional teaching example.",
+          "human_summary": "An associate checks status and sends the approved template.",
+          "agent_summary": "No agent work today."
+        },
+        "proposed": {
+          "mode": "agent",
+          "human_work": "The senior specialist defines allowed templates and handles exceptions; no per-message review is proposed.",
+          "agent_work": "Agents send only the matching approved template when the case status is verified.",
+          "owner_id": "lead",
+          "basis": "Fictional teaching example.",
+          "agent_summary": "Agents send only the matching approved template when the case status is verified."
+        },
+        "status": "changed",
+        "reason": "A bounded message can be sent without waiting for a person, if status and recipient checks are verified.",
+        "short_reason": "A bounded message can be sent without waiting for a person, if status and recipient checks are verified."
+      }
+    ],
+    "decisions": [
+      {
+        "id": "refund",
+        "label": "Approve a refund exception",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "The manager approves any exception.",
+          "agent_work": "No agent authority.",
+          "owner_id": "manager",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The manager approves any exception.",
+          "agent_summary": "No agent authority."
+        },
+        "proposed": {
+          "mode": "human",
+          "human_work": "The manager continues to approve exceptions.",
+          "agent_work": "Agents may prepare a case summary but cannot approve the exception.",
+          "owner_id": "manager",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The manager continues to approve exceptions.",
+          "agent_summary": "Agents may prepare a case summary but cannot approve the exception.",
+          "condition": "Only the manager approves or refuses a refund exception. Agents may prepare a case summary and cannot approve the exception."
+        },
+        "status": "retained",
+        "reason": "No change to exception approval is proposed.",
+        "short_reason": "No change to exception approval is proposed."
+      }
+    ],
+    "reporting": {
+      "status": "retained",
+      "reason": "This fictional participant chose to retain formal reporting for the trial.",
+      "current_context": "Relationships supplied for the fictional example.",
+      "proposed_context": "The same relationships are proposed.",
+      "links": {
+        "current": [],
+        "proposed": []
+      }
+    },
+    "organisation": {
+      "current_note": "No AI is used in this selected workflow.",
+      "proposed_note": "Proposed work and supervision are shown; inspect each node for its boundaries.",
+      "current": [],
+      "proposed": [
+        {
+          "id": "org-triage",
+          "label": "Request classification and status agents",
+          "supervisor_id": "lead",
+          "summary": "Request classification and status agents",
+          "detail": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "status": "clarified",
+          "ai_kind": "agent",
+          "instances": null,
+          "relationship": "supervises",
+          "service_id": "triage"
+        }
+      ]
+    }
+  },
+  "exercise": {
+    "version": 1,
+    "stage": "current",
+    "staffing_review": "The manager keeps all five posts for the trial. Agents take routine classification and status updates, but the coordinator still resolves uncertain or new categories and the senior specialist supervises the agents and handles exceptions, so no post is removed and formal reporting stays the same."
+  }
+}

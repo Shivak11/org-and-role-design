@@ -1,0 +1,6 @@
+interface:
+  display_name: "Run an Org Structure Exercise"
+  short_description: "Teach structure concepts through a learner's own workflow redesign"
+  default_prompt: "Use $run-org-structure-exercise to run the workflow exercise with me: I describe how a familiar piece of work runs today, propose a change, and then see which structure concepts my choices show."
+policy:
+  allow_implicit_invocation: false

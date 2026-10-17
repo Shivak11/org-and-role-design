@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "title": "People function: current and proposed work",
+  "status": "draft",
+  "revision": 1,
+  "confirmation": {
+    "accepted": false,
+    "revision": 1,
+    "wording": ""
+  },
+  "organisation": {
+    "label": "Fictional organisation",
+    "scope": "A fictional CHRO responsible for 480 HR staff serving a 12,000-person company; one regional case is examined closely.",
+    "horizon": "A proposed limited trial",
+    "context": "All people, quantities and choices in this example are fictional.",
+    "exclusions": "Only the displayed units and activities are examined. Other work remains outside this proposal."
+  },
+  "evidence_note": "Fictional exercise record for demonstrating the portable skill. No live process has changed.",
+  "outcomes": [
+    {
+      "id": "outcome",
+      "name": "Deliver the selected service accurately and on time",
+      "owner_id": "chro",
+      "success": "Agree service-quality and response-time measures before the trial.",
+      "basis": "Fictional example; no target measured."
+    }
+  ],
+  "current_roles": [
+    {
+      "id": "chro",
+      "label": "CHRO",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "480 HR staff in the function",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "ops",
+      "label": "Head of People Operations",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ta",
+      "label": "Head of Talent Acquisition",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "reward",
+      "label": "Head of Reward",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "learning",
+      "label": "Head of Learning",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "digital",
+      "label": "Head of HR Systems",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "relations",
+      "label": "Head of Employee Relations",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "region",
+      "label": "Regional HR Manager",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "site",
+      "label": "Site HR Lead",
+      "parent_id": "region",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "shift",
+      "label": "Shift HR Officer",
+      "parent_id": "site",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coordinator",
+      "label": "HR Service Coordinator",
+      "parent_id": "shift",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "other-regions",
+      "label": "Other regional HR teams",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "unit",
+      "size": "Five regions aggregated; internal reporting not examined",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "proposed_roles": [
+    {
+      "id": "chro",
+      "label": "CHRO",
+      "parent_id": null,
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "480 HR staff in the function",
+      "reporting_status": "known_root"
+    },
+    {
+      "id": "ops",
+      "label": "Head of People Operations",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "ta",
+      "label": "Head of Talent Acquisition",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "reward",
+      "label": "Head of Reward",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "learning",
+      "label": "Head of Learning",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "digital",
+      "label": "Head of HR Systems",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "relations",
+      "label": "Head of Employee Relations",
+      "parent_id": "chro",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "region",
+      "label": "Regional HR Manager",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "site",
+      "label": "Site HR Lead",
+      "parent_id": "region",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "shift",
+      "label": "Shift HR Officer",
+      "parent_id": "site",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "coordinator",
+      "label": "HR Service Coordinator",
+      "parent_id": "shift",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "role",
+      "size": "",
+      "reporting_status": "known_parent"
+    },
+    {
+      "id": "other-regions",
+      "label": "Other regional HR teams",
+      "parent_id": "ops",
+      "scope": "Area shown in this example",
+      "responsibilities": [
+        "Responsibilities need local confirmation."
+      ],
+      "change": "retained",
+      "reason": "No reporting change proposed.",
+      "node_type": "unit",
+      "size": "Five regions aggregated; internal reporting not examined",
+      "reporting_status": "known_parent"
+    }
+  ],
+  "services": [
+    {
+      "id": "policy",
+      "label": "Shared policy preparation agents",
+      "outcome_owner_id": "ops",
+      "supervisor_id": "coordinator",
+      "service_owner_id": "digital",
+      "availability": "Proposed; access and performance not verified.",
+      "shared_with": "Only the selected team in this example.",
+      "agent_roles": [
+        {
+          "id": "policy-agent",
+          "label": "Shared policy preparation agents",
+          "tasks": [
+            "Retrieve permitted policy sources.",
+            "Prepare an answer with cited evidence."
+          ],
+          "autonomy": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "inputs": "Permitted case records and approved instructions.",
+          "outputs": "Result with evidence and any unresolved issue.",
+          "tools": [
+            "Required system access to confirm"
+          ],
+          "escalation_to_id": "coordinator",
+          "escalation_condition": "Missing evidence or an action outside the specified boundary.",
+          "instances": null
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "policy-query",
+      "label": "Answer an employee policy query",
+      "outcome_id": "outcome",
+      "coverage": "The policy query path at one regional site is traced step by step. Employee-relations case preparation and decisions appear only in the division and decision views.",
+      "current": [
+        {
+          "id": "answer",
+          "activity_id": "policy",
+          "action": "Check the retrieved policy passages and send the answer",
+          "actor_type": "human",
+          "actor_id": "coordinator",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Employee policy query and passages retrieved by the existing search assistant",
+          "output": "Checked answer sent to the employee",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "proposed": [
+        {
+          "id": "prepare",
+          "activity_id": "policy",
+          "action": "Prepare a source-linked answer",
+          "actor_type": "agent",
+          "actor_id": "policy-agent",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Employee policy query and permitted policy sources",
+          "output": "Answer with cited sources, or an uncertain case",
+          "approval_by_id": null,
+          "condition": "Unclear interpretation or conflicting sources go to the coordinator."
+        },
+        {
+          "id": "resolve",
+          "activity_id": "policy",
+          "action": "Resolve the interpretation or conflicting sources",
+          "actor_type": "human",
+          "actor_id": "coordinator",
+          "actor_label": "",
+          "owner_id": "coordinator",
+          "input": "Uncertain case with the retrieved sources",
+          "output": "Resolved answer",
+          "approval_by_id": null,
+          "condition": ""
+        }
+      ],
+      "relations": {
+        "current": [],
+        "proposed": [
+          {
+            "from_step_id": "prepare",
+            "to_step_id": "resolve",
+            "kind": "escalation",
+            "label": "Interpretation is unclear or sources conflict"
+          }
+        ]
+      }
+    }
+  ],
+  "work_changes": [],
+  "levers": [],
+  "readiness": [],
+  "pilot": {
+    "scope": "Limited authorised cases, if locally approved.",
+    "owner_id": "chro",
+    "measure": "Accuracy, elapsed time and human review demand.",
+    "baseline": "Not measured.",
+    "success": "To agree before starting.",
+    "stop": "Pause on untraceable outputs or action beyond permission.",
+    "review_date": "To agree."
+  },
+  "open_questions": [
+    "Required access, review capacity and trial measures remain to be checked."
+  ],
+  "history": [],
+  "comparison": {
+    "perspective": "CHRO; enterprise overview with one operational branch examined.",
+    "scale": "480 HR staff serve 12,000 employees. Twelve role or unit nodes summarise the selected scope; five regions remain aggregated.",
+    "division": [
+      {
+        "id": "policy",
+        "label": "Prepare an answer to a policy query",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "hybrid",
+          "human_work": "The coordinator checks the answer before sending it.",
+          "agent_work": "An existing search assistant retrieves relevant policy passages.",
+          "owner_id": "coordinator",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The coordinator checks the answer before sending it.",
+          "agent_summary": "An existing search assistant retrieves relevant policy passages."
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "human_work": "The coordinator resolves interpretation or conflicting sources.",
+          "agent_work": "A shared agent prepares a source-linked answer and sends uncertain cases to the coordinator.",
+          "owner_id": "coordinator",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The coordinator resolves interpretation or conflicting sources.",
+          "agent_summary": "A shared agent prepares a source-linked answer and sends uncertain cases to the coordinator."
+        },
+        "status": "changed",
+        "reason": "Preparation expands beyond retrieval; interpretation stays with a person.",
+        "short_reason": "Preparation expands beyond retrieval; interpretation stays with a person."
+      },
+      {
+        "id": "case",
+        "label": "Prepare an employee-relations case",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "unknown",
+          "human_work": "Current responsibilities have not been established for this activity.",
+          "agent_work": "Current agent use has not been established.",
+          "owner_id": "relations",
+          "basis": "Current division not supplied.",
+          "human_summary": "Current responsibilities have not been established for this activity.",
+          "agent_summary": "Current agent use has not been established."
+        },
+        "proposed": {
+          "mode": "hybrid",
+          "human_work": "An authorised employee-relations specialist judges the evidence and decides the next action.",
+          "agent_work": "Agents arrange permitted documents and identify missing evidence.",
+          "owner_id": "relations",
+          "basis": "Fictional teaching example.",
+          "human_summary": "An authorised employee-relations specialist judges the evidence and decides the next action.",
+          "agent_summary": "Agents arrange permitted documents and identify missing evidence."
+        },
+        "status": "clarified",
+        "reason": "This proposed division is newly specified; the example does not establish how much work moves from today.",
+        "short_reason": "This proposed division is newly specified; the example does not establish how much work moves from today."
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision",
+        "label": "Decide a consequential employee action",
+        "outcome_id": "outcome",
+        "current": {
+          "mode": "human",
+          "human_work": "The authorised employee-relations leader makes the decision.",
+          "agent_work": "No agent decision authority.",
+          "owner_id": "relations",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The authorised employee-relations leader makes the decision.",
+          "agent_summary": "No agent decision authority."
+        },
+        "proposed": {
+          "mode": "human",
+          "human_work": "The authorised leader retains the decision and the review process.",
+          "agent_work": "Agents can support preparation within approved access.",
+          "owner_id": "relations",
+          "basis": "Fictional teaching example.",
+          "human_summary": "The authorised leader retains the decision and the review process.",
+          "agent_summary": "Agents can support preparation within approved access.",
+          "condition": "Only the authorised employee-relations leader decides a consequential employee action. Agents may support preparation within approved access and cannot make or carry out the decision."
+        },
+        "status": "retained",
+        "reason": "Preparation support does not transfer decision authority.",
+        "short_reason": "Preparation support does not transfer decision authority."
+      }
+    ],
+    "reporting": {
+      "status": "retained",
+      "reason": "This fictional participant chose to retain formal reporting for the trial.",
+      "current_context": "Relationships supplied for the fictional example.",
+      "proposed_context": "The same relationships are proposed.",
+      "links": {
+        "current": [],
+        "proposed": []
+      }
+    },
+    "organisation": {
+      "current_note": "Recorded current AI is shown; unresolved supervision remains detached.",
+      "proposed_note": "Proposed work and supervision are shown; inspect each node for its boundaries.",
+      "current": [
+        {
+          "id": "current-search-ai",
+          "label": "Policy search assistant",
+          "supervisor_id": null,
+          "summary": "Retrieves policy passages",
+          "detail": "An existing search assistant retrieves passages; its current human user was not established in this example.",
+          "status": "unassessed",
+          "ai_kind": "assistant",
+          "instances": null,
+          "relationship": "uses"
+        }
+      ],
+      "proposed": [
+        {
+          "id": "org-policy",
+          "label": "Shared policy preparation agents",
+          "supervisor_id": "coordinator",
+          "summary": "Shared policy preparation agents",
+          "detail": "Perform only the specified work; return uncertain cases to the supervisor.",
+          "status": "clarified",
+          "ai_kind": "agent",
+          "instances": null,
+          "relationship": "supervises",
+          "service_id": "policy"
+        }
+      ]
+    }
+  },
+  "exercise": {
+    "version": 1,
+    "stage": "current",
+    "staffing_review": "The CHRO keeps every post and reporting line in the examined branch for the trial. Agents prepare policy answers, but the HR Service Coordinator still resolves unclear or conflicting answers and supervises the agents, so no post is removed. Post counts across the 480-person function and in the other regional HR teams were not examined."
+  }
+}

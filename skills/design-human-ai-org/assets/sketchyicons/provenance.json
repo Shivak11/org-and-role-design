@@ -1,0 +1,127 @@
+{
+  "package": "@sketchyicons/static",
+  "version": "0.5.0",
+  "package_source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/package.json",
+  "official_repository": "https://github.com/Fantomiald/sketchyicons",
+  "retrieved_at_utc": "2026-09-11T16:39:09.696998+00:00",
+  "preserved_original_bytes": true,
+  "repository_fallback_commit": null,
+  "licensing": {
+    "code": "MIT",
+    "geometry": "Lucide ISC with Feather MIT notices where applicable",
+    "notice_files": [
+      "LICENSE",
+      "NOTICE"
+    ]
+  },
+  "files": [
+    {
+      "filename": "user-round.svg",
+      "bytes": 597,
+      "sha256": "37bbc844102ccdf32739f0635be1fb436c4e485e3c13b61dce973c2185f776c7",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/user-round.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/user-round.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "users-round.svg",
+      "bytes": 725,
+      "sha256": "7216a096a586003661ae3ddbe446a69bcb36bed32a57895d3d0630213714395e",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/users-round.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/users-round.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "bot.svg",
+      "bytes": 818,
+      "sha256": "198e8b7957a86d86256eb4f41a928bd3e4e15076597ca3ecbb2155334c625ac8",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/bot.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/bot.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "list-checks.svg",
+      "bytes": 601,
+      "sha256": "c8d9ced5b7b8070c77b4d28e1e7f53e4d48fcd50a689fd43f8518108bada349b",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/list-checks.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/list-checks.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "scan-eye.svg",
+      "bytes": 1127,
+      "sha256": "741280276a3bdc46b34f4427e8a5c259485c32da679ce3e472b69b24a511fa95",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/scan-eye.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/scan-eye.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "handshake.svg",
+      "bytes": 1082,
+      "sha256": "90f835158174e6ee727b8fc784fbf53628c2a0d4111a5f1ad5f58f7caa12d488",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/handshake.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/handshake.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "shield-check.svg",
+      "bytes": 729,
+      "sha256": "3247f2e23b108ad4d7e53c679b9211127cd238496010cef6500a138702e6097c",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/shield-check.svg",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/icons/shield-check.svg",
+      "validation": {
+        "xml_valid": true,
+        "view_box": "0 0 24 24",
+        "scripts": false,
+        "external_references": false
+      }
+    },
+    {
+      "filename": "LICENSE",
+      "bytes": 1072,
+      "sha256": "298558237305d5e4f26761e6f865b83618e10dc57f139b8cd3e88aae2d95971c",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/LICENSE",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/LICENSE",
+      "source_kind": "published-package"
+    },
+    {
+      "filename": "NOTICE",
+      "bytes": 3953,
+      "sha256": "3c07bcb8ac1b44416deca7ea94cb5e7c385083cd9175070048175cebc36c9faf",
+      "source_url": "https://unpkg.com/@sketchyicons/static@0.5.0/NOTICE",
+      "resolved_url": "https://unpkg.com/@sketchyicons/static@0.5.0/NOTICE",
+      "source_kind": "published-package"
+    }
+  ],
+  "local_reuse": "Unchanged original SVGs and licence notices reused from the previously verified CAT/MBA story for the organisation-design exercise."
+}
